@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex003</title>
+    <style>
+        body {
+            background-color: black ;
+            color: white;
+            font-family: sans-serif;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var idade = Number(prompt('quantos anos você tem ?'))
+        var sal = Number(prompt('quanto você ganha por ano ?'))
+        var nome = String(prompt('qual seu nome ?'))
+        sal /= 12;
+        document.writeln( 'Parabéns ' + nome + ' , você ganha ' + sal.toFixed(2) + ' por Mês <br>')
+        document.writeln('você tem ' + idade + ' anos <br>')
+        document.writeln('seu nome em maiusculo fica ' + nome.toUpperCase())
+        document.writeln('seu nome em minusculo fica ' + nome.toLowerCase())
+
+
+    </script>
+</body>
+</html>

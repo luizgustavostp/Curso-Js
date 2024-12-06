@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex001</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: rebeccapurple;
+            color: white;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>é a gangue do autismo</h1>
+    <script>
+        var sal = 200;
+        var emprego = prompt('qual sua área')
+        if (emprego == 'front end') {
+            sal += 6000
+        }
+        if (emprego == 'back end') {
+            sal += 10000
+        }
+        else {
+            sal += 1450
+        } 
+        document.write('<br> sua área é ' + emprego + '<br>') 
+        document.write('seu salario é correspondente a ' + sal + ' correto ?')
+        if (sal > 6200 ) {
+            document.write('<br> Você ganha bem')
+        }
+        else if (sal > 10000) {
+            document.write('<br> você ganha muito bem!')
+        }
+        else {
+            document.write('<br> você ganha mal')
+        }
+    </script>
+</body>
+</html>

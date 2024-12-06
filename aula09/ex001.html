@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 001</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: burlywood;
+        }
+        h1 {
+            font-size: 2.5em;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="aga1">Operadores de identidades!</h1>
+
+    <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi nobis asperiores temporibus quod veniam nemo, velit adipisci eveniet nam quia reiciendis, nihil illum alias eum ipsam officiis, magni hic laborum!</p>
+
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam deserunt repellat similique? Debitis nisi, corrupti cupiditate quo eveniet earum cumque officia rem quos rerum ipsa error, dolor dolores dicta eius! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere sequi architecto molestiae magni dolorem id nesciunt asperiores veniam maxime repellendus? Qui harum neque cupiditate veritatis nemo quaerat eius facere aliquid!</p>
+    <script>
+    var cor = window.prompt('qual cor de fundo você quer ? (em inglês)')
+
+    var cordotexto = window.prompt('Qual cor do texto você quer ? (em inglês)')
+    
+    var texto = document.getElementById('aga1')
+    
+    var paragrafo = document.getElementsByClassName('para') [0]
+
+    paragrafo.style.color = 'red'
+
+    texto.style.color = cordotexto
+
+    document.body.style.backgroundColor = cor
+
+    </script>
+</body>
+
+</html>

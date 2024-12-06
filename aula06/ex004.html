@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex004</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: sans-serif;
+            color: white;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>SEU FORMULARIO!</h1>
+    <script>
+        var nome = String(prompt('qual seu nome?'))
+        var idade = Number(prompt('Qual sua idade? '))
+        var sal = Number(prompt('Quanto você ganha por ano? '))
+        sal /= 12
+        document.write('seu nome é '+ nome +', seu salário é ' + sal.toFixed(2).replace('.' , ',') + ' por mês ,e você tem ' + idade + ' anos, <br> ')
+        if (sal < 1450) {
+            document.write('seu salário é baixo <br>')
+        }
+        else {
+            document.write('seu salário é alto <br>')
+        }
+
+        if (nome.length < 5){
+            document.write(' seu nome é curto')
+        }
+        else {
+            document.write(' seu nome é grande')
+        }
+        if (nome.length < 5 && sal < 1450) {
+            document.write('<br> você é um bosta')
+        }
+        else {
+            document.write('<br> você é legal')
+        }
+    </script>
+</body>
+</html>
