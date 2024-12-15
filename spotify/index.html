@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saphire enviroment</title>
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/font.css">
+    <link rel="stylesheet" href="estilos/media.css">
+    <link rel="stylesheet" href="estilos/style.css"> <!--pagina de estilos no css-->
+    <link rel="stylesheet" href="estilos/font.css"> <!--importação de fontes em outro arquivo-->
 </head>
 <body>
     <header>
@@ -13,28 +14,28 @@
 
             <img src="imagens/logo.svg" alt="" class="logo"> <!-- logotipo da navbar que fica na esquerda-->
 
-            <ul> <!-- lista de nav bar que fica no centro-->
-                <li><a href="#artigo-1">Inicio</a></li>
+            <ul id="listadanav"> <!-- lista de nav bar que fica no centro-->
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="#somos">Sobre</a></li>
                 <li><a href="loja.html">Loja</a></li>
             </ul>
 
-            <a href="#artigo-sla"><button class="download-btn">Download</button></a> <!-- Botão que fica na direita da navbar-->
+            <a href="#artigo-sla"><button class="download-btn" id="firstdownload">Download</button></a> <!-- Botão que fica na direita da navbar-->
 
         </nav>
 
     </header>
     <main>
         <article id="artigo-1">
-            <aside class="parte-1">
-                <h1>saphire <span class="outline">enviroment</span></h1> <!-- titulo do primeiro textinho-->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem molestiae in id soluta repellendus, atque blanditiis saepe sequi alias. Harum dicta distinctio quisquam ipsum mollitia libero quasi fuga id iste?</p>
-                <a href="#somos" class="saber-btn">Saber mais.</a><!-- botão que vai ficar em baixo-->
+            <aside class="aside-1">
+                    <h1>saphire <strong class="outline">enviroment</strong></h1> <!-- titulo do primeiro textinho-->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem molestiae in id soluta repellendus, atque blanditiis saepe sequi alias. Harum dicta distinctio quisquam ipsum mollitia libero quasi fuga id iste?</p>
+                    <a href="#somos" class="saber-btn">Saber mais.</a><!-- botão que vai ficar em baixo-->
             </aside>
 
 
 
-            <aside> <!--aréa com imagem que vai quebrar pro lado-->
+            <aside class="aside2"> <!--aréa com imagem que vai quebrar pro lado-->
                  <img src="imagens/equipe.png" alt="" class="equipe-img">
             </aside>
             <div class="blur"></div>  <!--blur que vai ficar como position absoluto-->
@@ -42,24 +43,26 @@
 
         </article>
 
-        <article id="somos">
+        <article id="somos"> <!--aba dizendo quem nós somos-->
 
-            <aside class="parte-3">
+            <aside class="aside-3">
 
 
                 <div class="cont">
                     <h1>Quem nós somos?</h1>
-                    <a href="#artigo-sla"><button class="down">&downarrow;</button></a>
+                    <a href="#artigo-download" class="link-paraodownload"><button class="down">&downarrow;</button></a>
                 </div>
                 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, asperiores? Consequatur nihil nesciunt aspernatur quidem eaque? Nobis qui deserunt corrupti voluptates optio dolorum ipsam quidem nesciunt, velit cupiditate totam similique.</p>
-<hr>
+</aside>
         </article>
-        <article id="artigo-sla"> 
+        <article id="artigo-download"> 
 
-            <aside>
-                <h1 class="aga1">Faça o download</h1>
+            <aside class="aside-4">
+                <h1 class="aga1">Faça o <strong class="outline2">download</strong></h1>
                 <button class="download-btn"> Download</button>
+                <p>clique <a href="" id="linkerror">aqui</a> se o download não funcionar</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa ut voluptas, quis esse magni perferendis deleniti exercitationem odit consequatur. Totam quibusdam unde id, asperiores excepturi saepe ipsa ut voluptatum facere!</p>
             </aside>
         </article>
 

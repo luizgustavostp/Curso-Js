@@ -1,0 +1,10 @@
+@media screen and (max-width: 768px) {
+    #firstdownload {
+        display: none;
+        height: 0;
+        width: 0;
+    }
+    header,nav {
+        justify-content: space-between;
+    }
+}
