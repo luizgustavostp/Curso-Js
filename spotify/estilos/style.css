@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@keyframes aparece1 {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes aparece2 {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes aparece3 {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.logo {
+    max-height: 40px;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Poppins";
+}
+ul {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    max-width: 500px;
+    list-style-type: none;
+}
+ul li {
+    transition: 140ms ease;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+    background-color: rgb(10, 10, 10);
+    color:rgb(228, 228, 228);
+    align-items: center;
+}
+header {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    background-color: rgb(10, 10, 10);
+}
+.download-btn {
+    font-family: "Poppins";
+    border: none;
+    height: 50px;
+    width: 100px;
+    border-radius: 15px;
+    background-color: rgb(0, 110, 255);
+    color: white;
+    transition: 140ms ease;
+}
+.download-btn:hover {
+    scale: 1.05;
+    border: 2px solid rgba(255, 255, 255, 0.247);
+    cursor: pointer;
+}
+.blur {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: rgba(13, 67, 92, 0.603);
+    left: 30%;
+    filter: blur(30px);
+    position: absolute;
+    top: 60px;
+
+}
+aside p {
+    width: 400px;
+    text-wrap: wrap;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+aside h1 {
+    margin-bottom: 5px;
+    font-size: 2em;
+}
+.parte-1 {
+    animation: aparece1;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    margin: 50px;
+}
+.equipe-img {
+    max-width: 400px;
+    margin-top: 50px;
+    animation: aparece2;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+}
+#artigo-1 {
+    flex-wrap: wrap;
+    color: rgb(228, 228, 228);
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+}
+a {
+    color: rgb(228, 228, 228);
+    text-decoration: none;
+}
+ul li:hover {
+    transform: translateY(-5px);
+    color: white;
+}
+.saber-btn {
+    color: rgb(158, 158, 158);
+    text-decoration: none;
+    border-right: 1px solid white;  
+    animation: digitando steps(1) 0.5s;
+    animation-iteration-count: infinite;
+    border-right: 1px solid white;
+
+}   
+@keyframes digitando {
+    from {
+        border-right: 1px solid rgba(255, 255, 255, 0);
+    }
+}
+
+#somos {
+    max-height: 800px;
+}
+.parte-3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.parte-3 p {
+    max-height: 200px;
+    margin: 20px;
+    animation-name: aparece3;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+.parte-3 h1 {
+    animation-name: aparece3;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    margin: 20px;
+    text-wrap: nowrap;
+    
+}
+.cont {
+    width: 400px;
+}
+.down {
+    animation-name: aparece3;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    background-color: white;
+    font-size: 0.8em;
+    height: 70px;
+    width: 70px;
+    margin: 50px;
+    border-radius: 50%;
+     transition: 150ms ease;
+     border: 1px solid black;
+}
+.down:hover {
+    background-color:  rgb(0, 110, 255) ;
+    color: white;
+}
+
+aside button {
+    margin: auto;
+    display: block;
+}
+#artigo-sla {
+    height: 300px;
+}
+footer {
+    background-color: rgb(204, 204, 204);
+    color: black;
+    font-size: 1em;
+    text-align: center;
+}
+hr {
+    width: 100%;
+
+}
+.aga1 {
+    margin-top: 60px;
+    text-align: center;
+}
