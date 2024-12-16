@@ -311,8 +311,7 @@ text-align: center;
 
 
 .art1 {
-    margin: auto;
-    width: 80%;
+
     display: grid;
     grid-template-columns:repeat(3, 230px);
     grid-auto-rows: auto;
@@ -331,7 +330,7 @@ text-align: center;
     transition: 120ms ease-in-out;
 }
 .container:hover  {
-    transform: scale(1.02);
+    transform: scale(1.05);
     outline: 1px solid black;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
 }
