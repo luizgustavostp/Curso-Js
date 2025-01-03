@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos em java script</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #area {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            color: white;
+            font-size: 35pt;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            margin: 20px;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">Area</div>
+    <script>
+        var area = window.document.getElementById('area')
+        function entrar() {
+            area.innerText = "Entrou!"
+        }
+        function saiu() {
+            area.innerText = "saiu!"
+            area.style.backgroundColor = "green"
+        }
+        function clicou() {
+            area.innerText = "clicou"
+            area.style.backgroundColor = "red"
+        }
+        area.addEventListener ('mouseenter', entrar)
+        area.addEventListener ('mouseout', saiu)
+        area.addEventListener ('click', clicou)
+    </script>
+</body>
+</html>
