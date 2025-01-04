@@ -38,7 +38,7 @@
                         <h1 selected="none" id="bethebest">Seja o Melhor.</h1>
                         <p id="useghost" class="para" selected="none" >use ghost tweeker.</p>
                         <p class="para2"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum modi magni nobis natus? Minima saepe commodi dicta culpa nesciunt voluptatem? Recusandae cum non soluta illum</p>
-                        <button id="btn" selected="none">Melhorar minhas habilidades &downarrow;</button>
+                        <button id="btn" selected="none" onmouseenter="btbaumentar()" onmouseleave="btbabaixa()">Melhorar minhas habilidades &downarrow;</button>
                     </article>
                     </section>
                 <article id="article2">
@@ -48,17 +48,20 @@
             </div>
     </main>
     <script>
-        var button = document.header.button
-        var tittle = document.querySelector("h1")
+        var bethebest = document.getElementById('bethebest')
+        var useghost = document.getElementById('useghost')
         
-        button.addEventListener('mouseenter' ,sla1())
-        button.addEventListener('mouseleave', sla())
-        function sla() {
-            tittle.style.scale = "1"
+
+        function btbaumentar() {
+            bethebest.style.scale = "1.05"
+             useghost.style.scale = "1.05"
+
         }
-        function sla1() {
-            tittle.style.scale = "2"
+        function btbabaixa() {
+            bethebest.style.scale = "1"
+            useghost.style.scale = "1"
         }
+
     </script>
 </body>
 </html>
