@@ -12,7 +12,7 @@
 <body>
     <section>
         <div class="back">
-            <video src="imagens/wall.mp4" alt="" autoplay muted loop></video>
+            <video id="video" src="imagens/wall.mp4" alt="" autoplay muted loop></video>
         </div>
         <div class="box" id="box">
             <div class="conteudo">
@@ -38,7 +38,7 @@
                         <h1 selected="none" id="bethebest">Seja o Melhor.</h1>
                         <p id="useghost" class="para" selected="none" >use ghost tweeker.</p>
                         <p class="para2" id="para2"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum modi magni nobis natus? Minima saepe commodi dicta culpa nesciunt voluptatem? Recusandae cum non soluta illum</p>
-                        <button id="btn" selected="none" onmouseenter="btbaumentar()" onmouseleave="btbabaixa()">Melhorar minhas habilidades &downarrow;</button>
+                        <a href="#article2" id="article2anchor"><button id="btn" selected="none" onmouseenter="btbaumentar()" onmouseleave="btbabaixa()">Melhorar minhas habilidades &downarrow;</button></a>
                     </article>
                     </section>
                 <article id="article2">
@@ -47,11 +47,14 @@
                         </div>
             </div>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
     <script>
         var bethebest = document.getElementById('bethebest')
         var useghost = document.getElementById('useghost')
         var para2 = document.getElementById('para2')
         var box = document.getElementById('box')
+        var video = document.getElementById('video')
 
         function btbaumentar() {
             bethebest.style.fontSize = "3.5em"
@@ -59,17 +62,19 @@
              useghost.style.transform = "translateX(50px)"
              useghost.style.color = "white"
             para2.style.color = "white"
-            box.style.background = "linear-gradient(to top, rgba(0, 0, 0, 0.397), rgba(255, 255, 255, 0))"
+            box.style.background = "linear-gradient(to top, #0f1a3054 15%, rgba(255, 255, 255, 0))"
             btn.style.transform = "translateY(5px)"
+            video.style.filter = "opacity(1) saturate(2)"
         }
         function btbabaixa() {
             bethebest.style.fontSize = "3em"
             useghost.style.fontSize = "1em"
             para2.style.color = "transparent"
             useghost.style.color = "rgba(255, 255, 255, 0.671)"
-            box.style.background = "linear-gradient(to top, rgb(0, 0, 0), rgba(255, 255, 255, 0))"
+            box.style.background = "linear-gradient(to top, #0f1a30 15%, rgba(255, 255, 255, 0))"
             useghost.style.transform = "translateX(0)"
-             btn.style.transform = "translateY(0)"
+            btn.style.transform = "translateY(0)"
+            video.style.filter = "opacity(0.5) saturate(0)"
         }
 
     </script>
