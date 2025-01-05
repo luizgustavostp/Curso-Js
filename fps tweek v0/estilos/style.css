@@ -57,7 +57,7 @@ ul {
     list-style-type: none;
 }
 li {
-    padding: 29px 24px;
+    padding: 29px 15px;
     color: rgb(247, 247, 247);
     
 }
@@ -112,6 +112,7 @@ header *::selection {
     
     text-shadow:0px 2.5px 0px rgba(0, 0, 0, 0.164);;
     line-height: 0.75em;
+    overflow: hidden;
 }
 #article1 {
     height: auto;
@@ -141,7 +142,7 @@ p {
     font-family: Helvetica;
     margin-bottom: 130px;
     font-weight: 100;
-    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.267);
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0);
     transition: 1s ease;
 }
 #btn {
