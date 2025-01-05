@@ -14,7 +14,7 @@
         <div class="back">
             <video src="imagens/wall.mp4" alt="" autoplay muted loop></video>
         </div>
-        <div class="box">
+        <div class="box" id="box">
             <div class="conteudo">
                 <header>
                     <nav>
@@ -37,7 +37,7 @@
                     <article id="article1">
                         <h1 selected="none" id="bethebest">Seja o Melhor.</h1>
                         <p id="useghost" class="para" selected="none" >use ghost tweeker.</p>
-                        <p class="para2"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum modi magni nobis natus? Minima saepe commodi dicta culpa nesciunt voluptatem? Recusandae cum non soluta illum</p>
+                        <p class="para2" id="para2"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum modi magni nobis natus? Minima saepe commodi dicta culpa nesciunt voluptatem? Recusandae cum non soluta illum</p>
                         <button id="btn" selected="none" onmouseenter="btbaumentar()" onmouseleave="btbabaixa()">Melhorar minhas habilidades &downarrow;</button>
                     </article>
                     </section>
@@ -50,16 +50,26 @@
     <script>
         var bethebest = document.getElementById('bethebest')
         var useghost = document.getElementById('useghost')
-        
+        var para2 = document.getElementById('para2')
+        var box = document.getElementById('box')
 
         function btbaumentar() {
-            bethebest.style.scale = "1.05"
-             useghost.style.scale = "1.05"
-
+            bethebest.style.fontSize = "3.75em"
+             useghost.style.fontSize = "1.05em"
+             useghost.style.transform = "translateX(50px)"
+             useghost.style.color = "white"
+            para2.style.color = "white"
+            box.style.background = "transparent"
+            btn.style.transform = "translateY(20px)"
         }
         function btbabaixa() {
-            bethebest.style.scale = "1"
-            useghost.style.scale = "1"
+            bethebest.style.fontSize = "3em"
+            useghost.style.fontSize = "1em"
+            para2.style.color = "rgba(255, 255, 255, 0.712)"
+            useghost.style.color = "rgba(255, 255, 255, 0.671)"
+            box.style.background = "linear-gradient(to top, rgb(0, 0, 0), rgba(255, 255, 255, 0))"
+            useghost.style.transform = "translateX(0)"
+             btn.style.transform = "translateY(0)"
         }
 
     </script>

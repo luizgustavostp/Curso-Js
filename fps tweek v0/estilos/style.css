@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
-    font-family: "Poppins";   
+    font-family: "Poppins";  
 }
 :root {
     --global-background: #152340;
@@ -22,6 +22,7 @@
     font-family: "Akira";
     src: url(../fontes/Akira\ Expanded\ Demo.otf);
 }
+
 [selected="yes"]::selection {
     background-color: #29CDF2;
 }
@@ -36,16 +37,17 @@
 }
 
 header {
-    margin: auto;
-    padding: 35px;
+    margin-inline: auto;
+    padding: 45px;
     border-radius: 25px;
     width: 80%;
     display: flex;
+    outline: 2px solid rgba(255, 255, 255, 0.068);
     justify-content: space-between;
     height: 3rem;
     align-items: center;
     background-color: #00000011;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(6px);
     box-shadow: rgba(0, 0, 0, 0.144) 0px 30px 120px;
 
     
@@ -56,16 +58,17 @@ ul {
 }
 li {
     padding: 29px 24px;
-    transition: 200ms ease-in-out;
     color: rgb(247, 247, 247);
+    
 }
 
 a {
     text-decoration: none;
     font-size: 1.1rem;
-    
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    transition: 200ms ease;
 }
-li:hover {
+a:hover,a:focus {
     transform: translateY(-5px);
     color: white;
     text-shadow: 0px 15px 15px rgba(0, 0, 0, 0.61);
@@ -105,12 +108,12 @@ header *::selection {
     font-size: 3em;
     color: white; 
     margin: 150px 40px 0px 40px;
-    transition: 200ms ease;
+    transition: 1s ease;
     
-    text-shadow:0px 4px 0px rgba(0, 0, 0, 0.164);;
+    text-shadow:0px 2.5px 0px rgba(0, 0, 0, 0.164);;
+    line-height: 0.75em;
 }
 #article1 {
-    background-color: #0f1a3000;
     height: auto;
 }
 p {
@@ -130,13 +133,16 @@ p {
     
 }
 .para2 {
+    color: rgba(255, 255, 255, 0.753);
     padding: 0 25px;
     margin: 20px auto;
     max-width: 600px;
     white-space: wrap;
     font-family: Helvetica;
     margin-bottom: 130px;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.267);
+    font-weight: 100;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.267);
+    transition: 1s ease;
 }
 #btn {
     text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.247);
@@ -155,13 +161,11 @@ p {
     padding: 20px;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
 }
 #btn:hover {
-    background-color: var(--azul-meio-escuro);
-    filter: saturate(3);
-    scale: 1.05;
-}
+    filter: saturate(2);}
 @media screen and (max-width:920px) {
     #download {
         scale: 0;
@@ -225,7 +229,7 @@ section div.back {
     position: absolute;
 }
 section div.back video {
-    filter: opacity(0.7);
+    filter: opacity(0.5);
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -233,9 +237,16 @@ section div.back video {
     filter: saturate(3px);
 }
 section div.box {
+
     position: relative;
     z-index: 1;
+    height: 800px;
+
+}
+#box {
+    transition:background 1s ease-in-out;
+    background: linear-gradient(to top, rgb(0, 0, 0), rgba(255, 255, 255, 0));
 }
 #useghost {
-    transition: 200ms ease;
+    transition: 1s ease;
 }
