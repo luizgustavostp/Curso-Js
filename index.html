@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+        h1 {
+            text-align: center;
+            font-size: 1.4em;
+            font-family: sans-serif;
+        }
+        #btn {
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        #btn * {
+            margin: 20px;
+        }
+        button {
+            padding: 15px;
+            font-size:1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>miguel daltro DÀ ABUNDA,é boiceta e ainda é gay?</h1>
+    <div id="btn">
+        <button id="sim" onclick="acertar()">SIM</button>
+        <button id="nao" onclick="acertar()">NÃO</button>
+    </div>
+
+    <script>
+        var sim = document.getElementById('sim')
+        var nao = document.getElementById('nao')
+        function acertar() {
+            sim.style.backgroundColor = "green"
+            nao.style.backgroundColor = "red"
+        }
+    </script>
+</body>
+</html>
