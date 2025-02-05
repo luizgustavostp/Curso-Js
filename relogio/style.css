@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'relogio';
+    src: url('DS-DIGIB.TTF');
+}
+#relogio {
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    margin: 200px auto;
+    height: 140px;
+    width: 310px;
+    border-radius: 24px;
+    outline: 1px solid black;
+}
+#display {
+    font-family: 'relogio';
+    display: flex;
+    font-size: 4em;
+}
+#display * {
+    margin: 0;
+}
+#imgbtn{
+    display: block;
+    margin: auto;
+}
