@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade e sexo</title>
+    <style>
+        body {
+            background-color: cyan;
+            font-family: sans-serif;
+            font-size: 1.4em;
+        }
+        #place {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            width: 500px;
+            padding: 50px;
+            background-color: white;
+            border-radius: 15px;
+        }
+        #txtidade {
+            padding: 15px;
+            width: 200px;
+            margin-right: 50px;
+        }
+        img {
+            height: 450px;
+            width: 450px;
+            border-radius: 50%;
+        }
+        p {
+            text-align: center;
+        }
+        #sexo {
+            margin-top: 50px;
+        }
+        #btn {
+            font-size: 1em;
+            border-radius: 20px;
+            background-color: rgb(255, 255, 255)
+            ;
+        }
+    </style>
+</head>
+<body>
+    <div id="place">
+        <div id="idaded">
+            <label for="txtidade">ano de nascimento: </label>
+            <input type="number" name="txtidade" id="txtidade" placeholder="ano de nascimento" min="1" max="2025" >
+        </div>
+        <div id="sexo">
+            <input type="radio" name="radsex" id="mas" checked>
+            <label for="mas">Masculino</label>
+            <input type="radio" name="radsex" id="fem">
+            <label for="fem">Feminino</label>
+        </div>
+        <input id="btn" type="button" value="confirm" onclick="verificar()" style="display: block; margin-top: 50px; padding: 20px; border-radius: 20px;">
+        <p id="res">Você tem.....</p>
+        <img src="ponto.jpg" alt="" id="img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
