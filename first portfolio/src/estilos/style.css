@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+
+}
+@keyframes btnaparecer {
+    0% {
+        opacity: 0;
+        top: 40px;
+
+    }
+    100% {
+        opacity: 1;
+        top: -20px;
+    }
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+header {
+    display: flex;
+    padding: 50px 20px;
+
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    
+}
+li {
+    margin: 0 20px;
+}
+#nav {
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+}
+#btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 11px;
+    border-radius: 15px;
+    border: 1px solid rgb(48, 48, 181);
+    cursor: pointer;
+}
+#options {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -20px;
+    left: 0;
+    transition: 140ms ease;
+    animation-name:btnaparecer;
+    animation-duration: 2s;
+    animation-timing-function:ease;
+    border-end-start-radius: 15px;
+    border-end-end-radius: 15px;
+    border: 1px solid rgb(48, 48, 181);
+    width: 118px;
+    border-top: none;
+    height: 200px;
+}
+#options li {
+    border-bottom: 1px solid rgb(48, 48, 181);
+    cursor: pointer;
+}
+#navoptions {
+    display: block;
+}
+#navoptions * {
+    margin-top: 20px;
+}
+#divbtn {
+    margin-right: 100px;
+    width: 100px;
+
+}
+#resto {
+    width: 50vw;
+    display: flex;
+    justify-content: end;
+}
+#logo {
+    margin:0 50px;
+}
