@@ -21,6 +21,9 @@ function verificar() {
         else {
             img.src = 'imagens/idoso-h.jpg'
         }
+        if (idade = 0 || idade > 120) {
+            alert('Verifique sua idade!')
+        }
     }
     else {
         genero = "mulher"
@@ -35,6 +38,9 @@ function verificar() {
         }
         else {
             img.src = 'imagens/idoso-m.jpg'
+        }
+        if (idade = 0 || idade > 120) {
+            alert('Verifique sua idade!')
         }
     }
     res.innerText = `Você é ${genero} e tem ${idade} anos!`
