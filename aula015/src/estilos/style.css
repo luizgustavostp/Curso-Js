@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header {
+    text-align: center;
+    font-size: 1.5em;
+}
+section {
+    width: 500px;
+    margin: auto;
+    height: 500px;  
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    
+}
+p {
+    font-size: 1.6rem;
+}
+body {
+    background: rgb(64, 127, 235);
+}
+footer {
+    text-align: center;
+    color: white;
+}
+h1 {
+    color: white;
+}
