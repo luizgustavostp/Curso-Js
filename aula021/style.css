@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif
+    ;
+}
+h1 {
+    text-align: center;
+}
+table {
+    margin: auto;
+    font-size: 2em;
+    outline: 2px solid black;
+    display: flex;
+    width: 700px;
+    outline: 5px solid black;
+}
+td {
+    outline: 2px solid black;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: start;
+}
+tr {
+    display: flex;
+
+}
