@@ -1,13 +1,5 @@
-var data = new Date();
-var meses = ["janeiro","fevereiro","março","abril","maio", "junho","julho","agosto","setembro","outubro","novembro","dezembro"]
-var Month = data.getMonth()
-var monthrt = document.getElementById('month')
-monthrt.innerHTML = meses [Month]
-var table = document.getElementById('tablemnh')
-table.classList.add(monthrt.innerHTML)
+let n1,n2 
+n1 = 11
+n2 = 10
 
-if (table.classList.contains = monthrt.innerHTML) {
-    var days = data.getDate()
-    var trselected = document.getElementById(days)
-    trselected.style.backgroundColor = "blue"
-}
+console.log(n1 && n2)

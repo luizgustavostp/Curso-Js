@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificando velocidade de carro</title>
+</head>
+<body>
+    <h1>Verificando multas</h1>
+    <input type="number" name="txtvel" id="txtvel">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="rel"> </div>
+    <script>
+        var veltxt = document.getElementById('txtvel')
+        var vel = Number(veltxt.value)
+        var rel = document.getElementById('rel')
+
+        function verificar() {
+        if (vel > 50) {
+            rel.innerHTML('você passou do limite de velocidade,entã foi multado') 
+
+        }
+        else {
+            rel.innerHTML('dirija com cuidado')
+        }
+    }
+     
+    </script>
+</body>
+</html>

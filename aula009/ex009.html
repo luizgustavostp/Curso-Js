@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz sobre Programação</title>
+    <style>
+        input {
+            padding: 50px;
+            margin: 15px;
+        }
+        * {
+            font-family: sans-serif;
+        }
+        #pergunta {
+            text-align: center;
+        }
+        #respostas1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #avancar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="pergunta1">
+        <h1 id="pergunta">Qual foi a primeira linguagem de programação existente?</h1>
+        <div id="respostas1">
+            <input type="button" value="JavaScript" id="chose1" onclick="acertar()">
+            <input type="button" value="C#" id="chose2" onclick="acertar()">
+            <input type="button" value="Java" id="chose3" onclick="acertar()">
+            <input type="button" value="C#" id="chose4" onclick="acertar()">
+        </div>
+    </div>
+    <div id="avancar">
+        <input type="button" value="&leftarrow;" id="volta" onclick="volta()">
+        <input type="button" value="&rightarrow;" id="avanca" onclick="avanca()">
+    </div>
+    <script>
+        var chose1 = document.getElementById('chose1')
+        var chose2 = document.getElementById('chose2')
+        var chose3 = document.getElementById('chose3')
+        var chose4 = document.getElementById('chose4')
+
+
+        p = 1
+        function acertar() {
+            if (p = 1) {
+                chose1.style.backgroundColor = "red"
+                chose2.style.backgroundColor = "green"
+                chose3.style.backgroundColor = "red"
+                chose4.style.backgroundColor = "red"
+            }
+        }
+        function volta() {
+            return p -=1;
+        }
+        function avanca() {
+            return p +=1;
+        }
+
+        if (p > 1) {
+
+            alert(p)
+        }
+    </script>
+</body>
+</html>
