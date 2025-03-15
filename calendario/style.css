@@ -1,0 +1,19 @@
+#calendar {
+    height: 600px;
+    width: 600px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px;
+    outline: 1.5px solid black;
+    font-family: sans-serif;
+    font-size: 1em;
+    
+}
+.calendar-day {
+    height: 80px;
+    padding: 10px;
+    outline: 1.5px solid black;
+    height: 80px;
+}
