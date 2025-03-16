@@ -17,3 +17,33 @@
     outline: 1.5px solid black;
     height: 80px;
 }
+.calendar-day:hover {
+    background-color: rgba(54, 184, 184, 0.264);
+}
+button {
+    height: 50px;
+    width:50px;
+    border-radius: 50%;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    border: none;
+    margin-bottom: 50px;
+    
+}
+#btns {
+    display: flex;
+    gap: 30px;
+}
+button:hover {
+    outline: 1px solid black;
+}
+#display {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+p {
+    font-family: sans-serif;
+}
