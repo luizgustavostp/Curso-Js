@@ -1,0 +1,151 @@
+/* uns style nada haver c nada */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+#urbana {
+    background-image: url('../pacotes/urbana/wall1.jpg');
+
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    
+}
+#natural {
+    background-image: url('../pacotes/natural/wall1.jpg');
+
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+   
+}
+#paisagem > * > p {
+    margin: 30px;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 1.4em;
+    transition: 200ms ease;
+}
+
+
+#paisagem {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    height: 600px;
+    margin: auto;
+    gap: 12px;
+}
+#paisagem > * {
+    cursor: pointer;
+    opacity: 0.6;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+#paisagem > *:hover {
+    transition: 300ms ease-in-out;
+    scale: 1.1;  
+    opacity: 1;
+}
+#paisagem > *:hover > p {
+    font-size: 2em;
+    margin: auto;
+    filter: blur(0);
+}
+
+hr {
+    margin: auto;
+    color: white;
+    width: 80%;
+    height: 3px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+}
+/* navbar do site */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navbarlist {
+    display: flex;
+    gap: 13px;
+    list-style-type: none;
+}
+.navbar-item {
+    font-size: 1.6em;
+    font-family: 'Poppins';
+    color: white;
+    transition: 200ms ease;
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+    color: rgb(206, 206, 206);
+}
+.navbar-item:hover {
+    transform: translateX(-10px);
+    color: white;
+}
+header {
+    display: flex;
+    padding: 12px;
+    height: 120px;
+    width: 100vw;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.657);
+    backdrop-filter: blur(30px);
+    outline: 1px white;
+    position: sticky;
+}
+#navbar {
+    display: flex;
+    padding: 20px;
+    width: 100vw;
+    gap: 40px;
+    justify-content: center;
+}
+#logo {
+    font-size: 1.8em;
+    font-family: "Poppins";
+    cursor: pointer;
+    color: white;
+    transition: 200ms ease;
+    padding: 10px;
+}
+#logo:hover {
+    scale: 1.1;
+    color: rgb(184, 184, 184);
+}
+
+html {
+    height: 200vh;
+    width: 100vw;
+    background-color: #111111;
+    scroll-behavior: smooth;
+}
+#main {
+    margin-top: 150px;
+}
+.holder {
+    text-align: center;
+    width: 100vw;
+    font-size: 1.3em;
+    color: white;
+    font-family: sans-serif;
+    margin: 20px;
+}
+btn {
+    background-color: rgba(255, 255, 255, 0.537);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    color: white;
+    display: none;
+}
