@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    width: 100vw;
+    height: 8vh;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 0 100px rgba(0, 0, 0, 0.107);
+    padding: 20px 0;
+}
+ul {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    list-style: none;
+    gap: 30px;
+    font-family: sans-serif;
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;   
+}
+#logo {
+    height: 3em;
+    width: 3em;
+}
+[selected='off']::selection{
+    background-color: transparent;
+}
+li {
+    cursor: pointer;
+    transition: 150ms ease;
+    padding: 15px;
+
+}
+li:hover {
+    transform: translateY(-10px);
+}
