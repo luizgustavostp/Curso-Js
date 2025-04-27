@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular peso</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="result">
+        <p id="resultado">seu resultado é: </p>
+        <button onclick="desativar()">OK!</button>
+    </section>
+        <header>
+        <div id="logo" select="on">Calc <br select="on">
+        peso</div>
+        <ul id="navlist">
+            <li class="navlist-item" select="on"><a class="a1" href="#section1">Calcular &#9733</a></li>
+            <li class="navlist-item"  select="on"><a class="a1" href="#section2">Como calculamos? &#9733</a></li>
+        </ul>
+
+    
+    </header>
+    <main>
+        <section id="section1">
+            <div id="form">
+                <input type="text" name="alt" id="alt" placeholder="Insira sua altura (em metros)">
+                <input type="text" name="peso" id="peso" placeholder="Insira seu peso (sem KG)">
+                <button id="calc" onclick="calcular()">Calcular peso!</button>
+        </div>
+        </section>
+        <section id="section2"><h1>Como analisamos o seu peso?</h1>
+        <br>
+        <p>Para calcularmos seu peso, Primeiro precisamos obter seu indice de massa muscular 
+        ou seja, <a href="" class="a2">seu IMC!</a> e para calcularmos ele, precisamos Calcular peso/(altura x altura)
+ </p>
+ <hr>
+    <ul id="list-imc">
+        <li>resultados menores que 16 — magreza grave;</li>
+        <li>resultados entre 16 e 16,9 — magreza moderada;</li>
+        <li>resultados entre 17 e 18,5 — magreza leve;</li>
+        <li>resultados entre 18,6 e 24,9 — peso ideal;</li>
+        <li>resultados entre 25 e 29,9 — sobrepeso;</li>
+        <li>resultados entre 30 e 34,9 — obesidade grau I;</li>
+        <li>resultados entre 35 e 39,9 — obesidade grau II ou severa;</li>
+        <li>resultados maiores do que 40 — obesidade grau III ou mórbida.</li>
+    </ul>
+    </section>
+    </main>
+    <footer>
+        <h1 id="especial">Site desenvolvido por luiz gustavo &copy</h1>
+    <a href="https://github.com/luizgustavostp">
+        <p id="github"> <img src="imagens/github-logo.png" alt="">github</p>
+    </a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

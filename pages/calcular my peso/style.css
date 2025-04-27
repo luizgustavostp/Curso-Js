@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+@keyframes aparecer {
+    0% {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+}
+::-webkit-scrollbar { display: none; }
+:root {
+    --salmao: #FF5346;
+    --salmãomoraescuro:#9f352dab;
+}
+[select='on']::selection {
+    background-color: transparent;
+}
+header {
+    max-height: 80px;
+    background-color: var(--salmao);
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    align-items: center;
+}
+#logo {
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-size: 36px;
+    color: white;
+    display: block;
+    line-height: 24px;
+    text-shadow: 1px 1px 0px var(--salmãomoraescuro)
+}
+.navlist-item {
+    padding: 25px;
+    color: white;
+    cursor: pointer;
+    font-family: "Poppins";
+    font-weight: 500;
+}
+#navlist {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 24px;
+}
+@media (max-width:645px) {
+    header {
+        height: 80px;
+    }
+    #logo {
+        padding: 12px;
+    }
+    #navlist {
+        gap: 10px;
+    }
+    #navlist  * {
+        font-size: 18px;
+    }
+    .navlist-item {
+        padding: 14px;
+        color: white;
+        cursor: pointer;
+        font-family: "Poppins";
+        font-weight: 500;
+    }
+}
+#section1 {
+    height: 500px;
+    max-width: 600px;
+    margin: auto;
+}
+#form {
+    margin-top: 36px;
+    padding: 36px;
+}
+input {
+    padding: 12px;
+    border-radius:8px;
+    border:1px solid;
+    display: block;
+    margin:36px auto;
+}
+button {
+    padding: 12px;
+    margin: auto;
+    display: block;
+    background-color: #FF5346;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 1;
+    transition: 200ms ease;
+}
+button:hover {
+    opacity: 1;
+}
+#form * {
+    scale: 1.5;
+}
+.a1 {
+    color: white;
+    text-decoration: none;
+    font-family: "Poppins";
+}
+.a2 {
+    text-decoration-color: var(--salmao);
+    color: black;
+}
+#section2 {
+    display: flex;
+    flex-direction: column;
+    padding: 36px;
+}
+#section2 h1 {
+    font-size: 36px;
+}
+#section2 p {
+    font-size: 24px;
+}
+#list-imc {
+    padding: 24px;
+   font-size: 1.3em;
+   list-style-type:decimal;
+}
+#list-imc li {
+    padding: 10px 0;
+}
+hr {
+    margin: 12px;
+}
+#especial {
+    font-size: 1.2em;
+}
+footer {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    background-color: var(--salmao);
+    justify-content: center;
+}
+img {
+    scale: 0.5  ;
+}
+#github {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+html {
+    scroll-behavior: smooth;
+}
+#result {
+    animation-name: aparecer;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-play-state: paused;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    top: 20%;
+    left: 50%;
+    right: -50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    border-radius: 24px;
+    padding: 12px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+#result * {
+    font-size: 24px;
+    color: black;
+    padding: 20px;
+
+}
+#result {
+    display: none;
+}

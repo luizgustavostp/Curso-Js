@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="display">
+        <p id="monthtxt" class="0">month: </p>
+        <div id="btns">
+            <button id="voltar" onclick="voltar(data)">
+                &leftarrow; 
+            </button>
+            <button id="avancar" onclick="avancar(data)">
+                &rightarrow;
+            </button>
+        </div>
+    </div>
+    <div id="container">
+    <div id="calendar" pages=0>
+        
+    </div>
+    <div id="lembretes"></div>
+</div>
+    <div id="dates">
+        <p id="timeatual">
+            alterar data atual : 
+            <input type="date" name="date" id="date">
+            <input type="submit" id="submit" value="ok" onclick="novadataNoNatual()">
+        </p>
+        <p id="marklem">
+            marcar Lembrete :
+            
+            <input type="date" name="datalem" id="datelem">
+            <input type="color" name="cor" id="cor">
+            <input type="text" name="texto" id="texto">
+            <input type="submit" value="ok" id="submitt" onclick="AdicionarLembrete()">
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,165 @@
+#calendar {
+    height: 600px;
+    width: 600px;
+    margin: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px;
+    outline: 1.5px solid black;
+    font-family: sans-serif;
+    font-size: 1em;
+    
+}
+.calendar-day {
+    height: 80px;
+    padding: 10px;
+    outline: 1.5px solid black;
+    height: 80px;
+    overflow: hidden;
+}
+.calendar-day:hover {
+    background-color: rgba(54, 184, 184, 0.264);
+}
+button {
+    height: 50px;
+    width:50px;
+    border-radius: 50%;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    border: none;
+    margin-bottom: 50px;
+    
+}
+#btns {
+    display: flex;
+    gap: 30px;
+}
+button:hover {
+    outline: 1px solid black;
+}
+#display {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+p {
+    font-family: sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+#timeatual {
+    display: flex;
+    flex-direction: column;
+}
+#date {
+    width: 150px;
+    height: 50px;
+    margin: 20px;    
+    font-family: sans-serif ;
+    text-indent: 15px;
+    padding: 5px;
+    border-radius: 12px;
+}
+#submit {
+    font-size: 1.1em;
+    font-family: sans-serif;
+    width: 50px;
+    margin: 10px;
+    height: 50px;
+    border-radius: 50%;
+    border:none;
+    cursor: pointer;
+}
+#submit:hover {
+    outline: 1px solid black;
+}
+#dates {
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+}
+#marklem {
+    display: flex;
+    flex-direction: column;
+}
+#cor {
+    height: 40px;
+    width: 40px;
+    border: none;
+}
+#texto {
+    border-radius: 12px;
+    padding: 5px;
+    text-indent: 6px;
+}
+#datelem {
+    width: 150px;
+    height: 50px;
+    margin: 20px;    
+    font-family: sans-serif ;
+    text-indent: 15px;
+    padding: 5px;
+    border-radius: 12px;
+}
+#submitt {
+    font-size: 1.1em;
+    font-family: sans-serif;
+    width: 50px;
+    margin: 10px;
+    height: 50px;
+    border-radius: 50%;
+    border:none;
+    cursor: pointer;
+}
+#submitt:hover {
+    outline: 1px solid black;
+}
+.barra {
+    height:45px;
+    margin: auto;
+    margin-right: 20px;
+    margin-left: 10px;
+    width: 10px;
+    border-radius: 12px;
+}
+#lembretes {
+    height: 500px;
+    width: 250px;
+    outline: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+#container {
+    display: flex;
+    justify-content: center;
+}
+.lemd {
+    display: flex;
+    outline: 1px solid black;
+}
+.exclua {
+    height: 40px;
+    width: 40px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.286);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    font-family: sans-serif;
+    border: 1px solid black;
+    font-size: 1.1em;
+    background-color: white;
+    scale: 0.8;
+    transition: 150ms ease;
+    cursor: pointer;
+}
+.exclua:hover {
+    font-size: 1.2em;
+    background-color: rgb(178, 178, 178);
+}

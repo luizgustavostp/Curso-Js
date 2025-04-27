@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-family: 1em;
+}
+html {
+    height: 100%;
+    width: 100%;
+}
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+#display {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    
+    align-items: center;
+}
+
+.adicionar {
+    height: 6vh;
+    border-radius: 12px;
+    border: none;
+    font-size: 1.1em;
+    width: 12vh;
+    cursor: pointer;
+}
+.adicionar:hover {
+    background-color: rgb(204, 204, 204);
+}
+select {
+    width: 200px;
+    option {
+        color: black;
+    }    
+}
+#sec {
+    
+    display: flex;
+    align-items: center;
+    height: 100ch;
+    justify-content: center;
+    flex-direction: column;
+}
+#sec * {
+     margin: 6px;
+     padding: 12px;
+}
+#outrasec {
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    background-color: rgb(57, 98, 125);
+}
+#outrasec *{
+    border-radius: 12px;
+    border: none;
+}
+#option1 {
+    background-color: rgb(178, 65, 65);
+}
+#option2 {
+    background-color: rgb(138, 138, 138);
+}
+#option3 {
+    background: rgb(4, 173, 4);
+}
+select:op {
+    background: none;
+}
+.container {
+    width: 500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    gap: 1px;
+    
+
+}
+.container * {
+    outline: solid 1px black;
+    padding: 20px;
+}

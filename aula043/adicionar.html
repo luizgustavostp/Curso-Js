@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar tarefas</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section id="sec">
+        <section id="outrasec">
+        <label for="tittle">Titulo:</label>
+        <input type="text" name="tittle" id="tittle">
+        <label for="andamento">andamento: </label>
+        <select name="andamento">
+            <option value="option1" id="option1" selected>Não concluida 😔</option>
+            <option value="option2" id="option2">Em andamento 😉</option>
+            <option value="option3" id="option3">Concluida! 😎</option>
+        </select>
+        <label for="date">Prazo total</label>
+        <input type="date" name="prazo" id="prazo">
+        <button id="adicionar" onclick="adicionarnalocal()">Add</button>
+    </section></section>
+    <script src="index.js"></script>
+</body>
+</html>

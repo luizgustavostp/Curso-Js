@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procurador de cep</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;   
+        }
+        h1 {
+            font-size: 3em;
+            margin: 20px;
+        }
+        p {
+            margin: 20px;
+            font-size: 2em;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            
+        }
+        section {
+            margin: auto;
+           
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            flex-direction: column;            
+        }
+        input {
+            font-size: 2em;
+        }
+        button {
+            font-size: 2em;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Procurador de cep</h1>
+        <input type="text" name="cep" id="cep" placeholder="Insira seu cep">
+        <button onclick="procurarcep()">Procurar</button>
+        <p id="resposta">Seu cep é: </p>
+    </section>
+    <script src="requisiçõeshttp.js"></script>
+</body>
+</html>
