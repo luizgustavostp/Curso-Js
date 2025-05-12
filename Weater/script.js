@@ -1,7 +1,7 @@
 
 async function call() {
     var query = document.getElementById("query").value
-    const promise = await fetch(`http://api.weatherapi.com/v1/current.json?key=26f6a0a03bbf4d499f700617251105&q=${query}&aqi=no`).then(resposta => resposta.json())
+    const promise = await fetch(`https://api.weatherapi.com/v1/current.json?key=26f6a0a03bbf4d499f700617251105&q=${query}&aqi=no`).then(resposta => resposta.json())
     const display = document.getElementById("display")
     const humidade = document.getElementById("Humidade")
     const temperatura = document.getElementById("temperatura")
