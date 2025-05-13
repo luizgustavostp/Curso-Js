@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@keyframes seila {
+    
+    100% {
+        transform: scaleY(1);
+    }
+}
 html {
     background-color: rgb(29, 7, 95);
     height: 100vh;
@@ -11,13 +17,6 @@ html {
 
 section {
     margin: auto;
-    div {
-        background-color: white;
-        height: 600px;
-        width: 500px;
-        border-radius: 25px;
-        display: none;
-    }
     input {
         border-radius: 23px;
         font-size: 1.6em;
@@ -25,6 +24,7 @@ section {
         height: 80px;
         width: 500px;
         border: 0;
+        margin: auto;
     }
     input:focus,input:hover {
         outline: 0;
@@ -56,10 +56,6 @@ section {
     font-size: 2em;
     font-family: "Cal Sans";
 }
-#display {
-    justify-items: center;
-    align-items: center;
-}
 #sensaçãotermica {
     font-size: 1.4em;
 }
@@ -81,3 +77,21 @@ button {
 button:hover {
     background-color: rgb(196, 197, 198);
 }
+div#display {
+    background-color: white;
+    height: 600px;
+    width: 500px;
+    border-radius: 25px;
+    transform: scaleY(0);
+    justify-items: center;
+    align-items: center;
+    animation-name: seila;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    transition: 0.3s ease;
+    animation-play-state: paused;
+    animation-fill-mode: both;
+    * {
+        transition: 0.3s ease;
+     }
+    }
