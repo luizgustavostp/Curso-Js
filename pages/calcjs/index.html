@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora em javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section id="display">
+            <div id="labels">
+                <p id="label"></p>
+                <p id="result"></p>
+            </div>
+                <section id="display-buttons">
+                    <article id="buttons"><button class="div1" onclick="AdicionarLabel(`1`)">1</button>
+                        <button id="div2" onclick="AdicionarLabel(`2`)">2</button>
+                        <button id="div3" onclick="AdicionarLabel(`3`)">3</button>
+                        <button id="div4" onclick="AdicionarLabel(`4`)">4</button>
+                        <button id="div5" onclick="AdicionarLabel(`5`)">5</button>
+                        <button id="div6" onclick="AdicionarLabel(`6`)">6</button>
+                        <button id="div7" onclick="AdicionarLabel(`7`)">7</button>
+                        <button id="div8" onclick="AdicionarLabel(`8`)">8</button>
+                        <button id="div9" onclick="AdicionarLabel(`9`)">9</button>
+                        <button id="div0" onclick="AdicionarLabel(`0`)">0</button>
+                    </article>
+                    <article id="operations">
+                        <button id="mais" onclick="AdicionarLabel(`+`)">+</button>
+                        <button id="menos" onclick="AdicionarLabel(`-`)">-</button>
+                        <button id="dividido" onclick="AdicionarLabel(`/`)">/</button>
+                        <button id="vezes" onclick="AdicionarLabel(`*`)">x</button>
+                    </article>
+                </section>
+                         
+                    <article id="buttons-apagar">
+                   <button id="apagar">
+                            Voltar
+                        </button>
+                         <button id="calc">=</button>
+                         </article>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
