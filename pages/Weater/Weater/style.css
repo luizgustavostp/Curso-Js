@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@keyframes seila {
+    
+    100% {
+        transform: scaleY(1);
+    }
+}
+html {
+    background-color: rgb(29, 7, 95);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+section {
+    margin: auto;
+    input {
+        border-radius: 23px;
+        font-size: 1.6em;
+        text-indent: 24px;
+        height: 80px;
+        width: 500px;
+        border: 0;
+        margin: auto;
+    }
+    input:focus,input:hover {
+        outline: 0;
+        border: 0;
+    }
+}
+#Humidade {
+    font-size: 2em;
+    color: black;
+    font-family: "Cal Sans";
+}
+#humidadediv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+    margin: 20px 0 0 0;
+    width: 85%;
+}
+#clima {
+    height: 300px;
+    width: 300px;
+}
+#humidadediv2 {
+    display: flex;
+    align-items: center;
+}
+#temperatura {
+    font-size: 2em;
+    font-family: "Cal Sans";
+}
+#sensaçãotermica {
+    font-size: 1.4em;
+}
+#cidade {
+    font-family: "Cal Sans";
+    font-weight: 600;
+    font-size: 2em;
+    color: rgb(24, 23, 23);
+}
+button {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    font-size: 1.5em;
+    border: none;
+    margin: 20px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(196, 197, 198);
+}
+div#display {
+    background-color: white;
+    height: 600px;
+    width: 500px;
+    border-radius: 25px;
+    transform: scaleY(0);
+    justify-items: center;
+    align-items: center;
+    animation-name: seila;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    transition: 0.3s ease;
+    animation-play-state: paused;
+    animation-fill-mode: both;
+    * {
+        transition: 0.3s ease;
+     }
+    }
